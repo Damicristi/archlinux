@@ -1,7 +1,7 @@
 <h4>Table of contents</h4>
 
 1. [Author's Linux Machine info](#1)
-2. [ZSH config file](#2)
+2. [Hack all my config files](#2)
 3. [Extend Display/monitors](#3)
 4. [Add full name of user in login manager](#4)
 5. [Check package version](#5)
@@ -12,8 +12,8 @@
 <h5 id="1">Author's Linux Machine info</h5>
 <asciinema-player src="https://raw.githubusercontent.com/Damicristi/archlinux/master/files/screenfetch"></asciinema-player>
 
-<h5 id="2"> ZSH config file</h5>
-<asciinema-player src="https://raw.githubusercontent.com/Damicristi/archlinux/master/files/zshrc"></asciinema-player>
+<h5 id="2"> Hack all my config files</h5>
+You can find all my config files at [GitHub](https://github.com/Damicristi/dotfiles).
 
 <h5 id="3"> Extend Display/monitors (install mons from pacaur)</h5>
 <asciinema-player src="https://raw.githubusercontent.com/Damicristi/archlinux/master/files/mons"></asciinema-player>

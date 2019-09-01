@@ -6,7 +6,7 @@
 4. [Add full name of user in login manager](#4)
 5. [Check package version](#5)
 6. [Hide dotfiles in mc file manager](#6)
-7. [Create a symlink folderof mount partition](#7)
+7. [Create a symlink folder of mount partition](#7)
 8. [Use git to track the dotfiles](#8)
 
 <h5 id="1">Author's Linux Machine info</h5>
@@ -35,7 +35,6 @@ So, to get rid off: Use ESC+period (.) or ALT+ period or click F9 -> O -> P -> h
 <h5 id="7">Create a symlink folder of mount partition</h5>
 I use ~Store Room as a symlink folder of mount ntfs partition. You can do so by:
 ```
-$ mkdir ~/FolderToWhichYouWantToSymlink
 $ ln -s /mnt/YourPartition ~/FolderToWhichYouWantToSymlink
 ```
 

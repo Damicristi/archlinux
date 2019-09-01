@@ -8,6 +8,7 @@
 6. [Hide dotfiles in mc file manager](#6)
 7. [Create a symlink folder of mount partition](#7)
 8. [Use git to track the dotfiles](#8)
+9. [Auto mount the external drives using udiskie](#9)
 
 <h5 id="1">Author's Linux Machine info</h5>
 <asciinema-player src="https://raw.githubusercontent.com/Damicristi/archlinux/master/files/screenfetch"></asciinema-player>
@@ -76,3 +77,24 @@ $ config push origin master
 ```
 
 Note: I use "+" in my commit message as "Added my".
+
+<h5 id="9"> Auto mount the external drives using udiskie</h5>
+I use "udiskie" package to auto-mount my external drives, and in i3wm config, I added this line:
+
+exec --no-startup-id udiskie -nas
+
+where flags nas means notification, auto-mount and smart tray respectively.
+
+I also created a symlink folder named "External Devices" in the home directory by doing this:
+1. Create permanent directory at /run/media i.e.
+```
+[YourLinuxUserName@hostname ~]$ sudo mkdir /run/media/YourLinuxUserName
+```
+
+2. Create a symlink as:
+```
+[YourLinuxUserName@hostname ~]$ ln -s /run/media/YourLinuxUserName ~/External\ Devices
+```
+
+<b>Bonus tip:</b> I also use "lsd" pacakge to have icon when I want to list all files & folders inside a directory. 
+Simply, this is an alternative to ls command. You can create an alias as ls for lsd in your shell config.

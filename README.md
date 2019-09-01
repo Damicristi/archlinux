@@ -13,7 +13,7 @@
 <asciinema-player src="https://raw.githubusercontent.com/Damicristi/archlinux/master/files/screenfetch"></asciinema-player>
 
 <h5 id="2"> Hack all my config files</h5>
-You can find all my config files at [GitHub](https://github.com/Damicristi/dotfiles).
+You can find all my config files at <a href="https://github.com/Damicristi/dotfiles">Github</a>.
 
 <h5 id="3"> Extend Display/monitors (install mons from pacaur)</h5>
 <asciinema-player src="https://raw.githubusercontent.com/Damicristi/archlinux/master/files/mons"></asciinema-player>

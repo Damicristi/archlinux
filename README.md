@@ -85,7 +85,8 @@ exec --no-startup-id udiskie -nas
 
 where flags nas means notification, auto-mount and smart tray respectively.
 
-I also created a symlink folder named "External Devices" in the home directory by doing this:
+I also created a symlink folder named "External Devices" in the home directory by doing these:
+
 1. Create permanent directory at /run/media i.e.
 ```
 [YourLinuxUserName@hostname ~]$ sudo mkdir /run/media/YourLinuxUserName

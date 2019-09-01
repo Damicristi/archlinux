@@ -51,14 +51,14 @@ $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'"
 
 For example:
 ```
-$ echo "alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'" >> $HOME/.zshrc
+$ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'" >> $HOME/.zshrc
 ```
 
 OR,
 
 Add this line in the .zshrc file:
 
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'"
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'"
 
 I've created an alias named config which means instead of using the command git, we use config.
 

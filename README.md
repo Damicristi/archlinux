@@ -41,11 +41,12 @@ $ ln -s /mnt/YourPartition ~/FolderToWhichYouWantToSymlink
 Note: ~ and $HOME are home directory's very close synonyms.
 
 <h5 id="8"> Use git to track the dotfiles</h5>
-I use folder named dotfiles to keep track my dotfiles and then, I upload to remote git repository (say, GitHub). Believe me, this is very easy to use.
+I use folder named .dotfiles to keep track my dotfiles and then, I upload to remote git repository (say, GitHub). Believe me, this is very easy to use.
+I strongly recommend to use period (.) infront of folder (or file) name, if the folder(or file) is not use very often such that it will be consider as hidden.
 ```
-$ mkdir $HOME/dotfiles
-$ git init --bare $HOME/dotfiles
-$ echo "alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'" >> $HOME/.YourShell-rc-File
+$ mkdir $HOME/.dotfiles
+$ git init --bare $HOME/.dotfiles
+$ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'" >> $HOME/.YourShell-rc-File
 ```
 
 For example:

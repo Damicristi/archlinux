@@ -58,8 +58,9 @@ $ echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'"
 OR,
 
 Add this line in the .zshrc file:
-
+```
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'"
+```
 
 I've created an alias named config which means instead of using the command git, we use config.
 
@@ -79,22 +80,37 @@ $ config push origin master
 Note: I use "+" in my commit message as "Added my".
 
 <h5 id="9"> Auto mount the external drives using udiskie</h5>
-I use "udiskie" package to auto-mount my external drives, and in i3wm config, I added this line:
-
+I use "udiskie" package (GUI for udisks2) to auto-mount my external drives, and in i3wm config, I added this line:
+```
 exec --no-startup-id udiskie -nas
+```
 
 where flags nas means notification, auto-mount and smart tray respectively.
 
 I also created a symlink folder named "External Devices" in the home directory by doing these:
 
-1. Create permanent directory at /run/media i.e.
+1. Create a directory name as /media:
 ```
-[YourLinuxUserName@hostname ~]$ sudo mkdir /run/media/YourLinuxUserName
+$ sudo mkdir /media
 ```
 
-2. Create a symlink as:
+2. Open nano by typing this:
 ```
-[YourLinuxUserName@hostname ~]$ ln -s /run/media/YourLinuxUserName ~/External\ Devices
+$ sudo nano /etc/udev/rules.d/99-udisks2.rules
+```
+
+Paste this command and save it:
+```
+# UDISKS_FILESYSTEM_SHARED
+# ==1: mount filesystem to a shared directory (/media/VolumeName)
+# ==0: mount filesystem to a private directory (/run/media/$USER/VolumeName)
+# See udisks(8)
+ENV{ID_FS_USAGE}=="filesystem|other|crypto", ENV{UDISKS_FILESYSTEM_SHARED}="1"
+```
+
+2. Create symlink as:
+```
+$ ln -s /media ~/External\ Devices
 ```
 
 <b>Bonus tip:</b> I also use "lsd" pacakge to have icon when I want to list all files & folders inside a directory. 

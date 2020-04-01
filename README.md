@@ -1,5 +1,6 @@
 <h4>Table of contents</h4>
 
+0. [Arch Linux Installation](#0)
 1. [Author's Linux Machine info](#1)
 2. [Hack all my config files](#2)
 3. [Extend Display/monitors](#3)
@@ -9,6 +10,10 @@
 7. [Create a symlink folder of mount partition](#7)
 8. [Use git to track the dotfiles](#8)
 9. [Auto mount the external drives using udiskie](#9)
+
+
+<h5 id="0">Arch Linux Installation</h5>
+It is always a wise decision to follow Arch Linux installation from arch wikipage at [link](https://wiki.archlinux.org/index.php/installation_guide).
 
 <h5 id="1">Author's Linux Machine info</h5>
 <asciinema-player src="https://raw.githubusercontent.com/Damicristi/archlinux/master/files/screenfetch"></asciinema-player>
